@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+# Expo Starter App with Clerk Authentication
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This repository provides a fully set up Expo project with authentication powered by **Clerk**. You can clone the repo and start building your app immediately without worrying about the initial setup.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Expo with React Native**: Pre-configured Expo project.
+- **Clerk Authentication**: Sign-up, Sign-in, and authentication flow already implemented.
+- **Welcome Screens**: Initial welcome pages included.
+- **Environment Variables**: Easily configurable via `.env`.
 
-   ```bash
-   npm install
-   ```
+## 📦 Installation & Setup
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+### 1️⃣ Clone the Repository
+```sh
+ git clone https://github.com/baaszunnaiyyer/react_native_expo_starter_with_clerk
+ cd react_native_expo_starter_with_clerk
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2️⃣ Install Dependencies
+```sh
+ npm install
+ # OR
+ yarn install
+```
 
-## Learn more
+### 3️⃣ Configure Environment Variables
+Create a `.env` file in the root directory and add your Clerk API keys:
 
-To learn more about developing your project with Expo, look at the following resources:
+```env
+ EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> 📝 **Note**: Get your Clerk API keys from the [Clerk Dashboard](https://clerk.dev/).
 
-## Join the community
+### 4️⃣ Start the Development Server
+```sh
+ npm start
+ # OR
+ expo start
+```
 
-Join our community of developers creating universal apps.
+## 🛠️ Project Structure
+```plaintext
+📂 your-repo-name
+│── 📂 app
+│   │── _layout.tsx
+│   │── +not-found.tsx
+│   │── index.tsx
+│   │── 📂 (auth)
+│   │   │── _layout.tsx
+│   │   │── sign-in.tsx
+│   │   │── sign-out.tsx
+│   │   │── welcome.tsx
+│   │── 📂 (root)
+│   │   │── _layout.tsx
+│   │   │── 📂 (tabs)
+│   │   │   │── _layout.tsx
+│   │   │   │── history.tsx
+│   │   │   │── home.tsx
+│   │   │   │── profile.tsx
+│   │   │   │── rides.tsx
+│── 📂 assets
+│── 📂 components
+│── 📂 constants
+│── 📂 scripts
+│── 📂 types
+│── .eslintrc.js
+│── .gitignore
+│── app.json
+│── babel.config.js
+│── cache.ts
+│── global.css
+│── metro.config.js
+│── nativewind-env.d.ts
+│── nativewind.d.ts
+│── package-lock.json
+│── README.md
+│── tailwind.config.js
+│── tsconfig.json
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## ✨ Contributing
+Feel free to contribute! Fork the repo, make changes, and submit a pull request.
+
+---
+
+Happy coding! 🚀
+
